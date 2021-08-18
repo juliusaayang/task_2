@@ -1,16 +1,11 @@
-# task_two
+# task_five (mobile)
 
-A new Flutter project.
+A project built with Flutter.
 
-## Getting Started
+## Links
+https://zuri.team,
+https://hng.tech
 
-This project is a starting point for a Flutter application.
+## Display
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![mobile](https://user-images.githubusercontent.com/73750587/129887636-8ae627d9-a507-4007-8fbd-f4133bb005fe.gif)
