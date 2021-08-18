@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Task 2',
+          'Task 5 (Mobile)',
           style: TextStyle(
             fontSize: 24,
             color: Colors.white,
@@ -24,43 +24,54 @@ class _HomePageState extends State<HomePage> {
         ),
         centerTitle: true,
       ),
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
+      body: ListView(
+        children: [
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            width: 300,
+            height: 100,
+            decoration: BoxDecoration(),
+            child: Image.asset(
+              'assets/hng.png',
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                30,
-                40,
-                20,
-                10,
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(
+              30,
+              40,
+              20,
+              10,
+            ),
+            child: TextFormField(
+              controller: controller,
+              style: TextStyle(
+                fontSize: 20,
               ),
-              child: TextFormField(
-                controller: controller,
-                style: TextStyle(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                errorBorder: OutlineInputBorder(),
+                hintText: 'Input your name',
+                hintStyle: TextStyle(
                   fontSize: 20,
                 ),
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  errorBorder: OutlineInputBorder(),
-                  hintText: 'Input your name',
-                  hintStyle: TextStyle(
-                    fontSize: 20,
-                  ),
-                  labelText: 'Input Name',
-                  labelStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                labelText: 'Input Name',
+                labelStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
             ),
-            SizedBox(
-              height: 30,
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 30,
             ),
-            InkResponse(
+            child: InkResponse(
               onTap: () {
                 setState(() {
                   name = controller.text;
@@ -89,67 +100,67 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 80,
-            ),
-            name != null
-                ? Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 40,
-                    ),
-                    child: Container(
-                      width: double.infinity,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 2,
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          name,
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
-                            color: Colors.grey[700],
-                          ),
-                        ),
+          ),
+          SizedBox(
+            height: 80,
+          ),
+          name != null
+              ? Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 40,
+                  ),
+                  child: Container(
+                    width: double.infinity,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
                       ),
                     ),
-                  )
-                : Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 40,
-                    ),
-                    child: Container(
-                      width: double.infinity,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 2,
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'the name goes in here ...',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.italic,
-                            letterSpacing: 1.5,
-                            color: Colors.grey[500],
-                          ),
+                    child: Center(
+                      child: Text(
+                        name,
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5,
+                          color: Colors.grey[700],
                         ),
                       ),
                     ),
                   ),
-          ],
-        ),
+                )
+              : Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 40,
+                  ),
+                  child: Container(
+                    width: double.infinity,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'the name goes in here ...',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.italic,
+                          letterSpacing: 1.5,
+                          color: Colors.grey[500],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+        ],
       ),
     );
   }
