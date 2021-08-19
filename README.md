@@ -1,8 +1,6 @@
-# task-two
+## task 2
 
-This is a code written in Java programming language that asks for your name, and give you your name back
-A simple user input task
-
+This is a Project for HNG internship, Mobile app and a block of code written with Java for user input 
 
 https://zuri.team,
 https://hng.tech
