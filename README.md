@@ -1,15 +1,11 @@
-# task_2
+# task-two
 
-A project built with Flutter.
+This is a code written in Java programming language that asks for your name, and give you your name back
+A simple user input task
 
-## Links
+
 https://zuri.team,
 https://hng.tech
 
-## Display
 
-![mobile](https://user-images.githubusercontent.com/73750587/129887636-8ae627d9-a507-4007-8fbd-f4133bb005fe.gif)
-
-## Picture
-![hng](https://user-images.githubusercontent.com/73750587/129887939-a1c9c7bf-59e7-465e-b855-1c94f66b02e0.png)
-
+![hng](https://user-images.githubusercontent.com/73750587/129885746-f0db2071-a123-41e9-bd5a-d31449720f10.png)
